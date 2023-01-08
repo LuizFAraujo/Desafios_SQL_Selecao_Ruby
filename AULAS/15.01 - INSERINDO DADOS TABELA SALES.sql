@@ -1,0 +1,25 @@
+-- SQLite
+
+
+
+-- Multiplos Inserts
+INSERT INTO SALES
+    (CUSTOMER_ID, EMPLOYEE_ID, DATE_SALE, TOTAL, DESCRIPTION) VALUES
+    (1, 3, '2022-06-10', 299.90, 'Pagamento PIX'),
+    (9, 1, '2022-06-25', 5999.99, 'Pagamento CARTÃO'),
+    (6, 2, '2022-06-30', 25.80, 'Pagamento CARTÃO'),
+    (11, 1, '2022-07-10', 799.80, 'Pagamento DINHEIRO'),
+    (4, 2, '2022-07-15', 2240.80, 'Pagamento PIX')
+;
+
+INSERT INTO SALES
+    (CUSTOMER_ID, EMPLOYEE_ID, DATE_SALE, TOTAL, DESCRIPTION) VALUES
+    (8, 1, '2022-06-12', 6199.90, 'Pagamento PIX')
+;
+
+
+SELECT * FROM SALES;
+SELECT * FROM CUSTOMERS;
+SELECT * FROM EMPLOYEES;
+
+

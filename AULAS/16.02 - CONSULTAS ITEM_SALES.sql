@@ -1,0 +1,27 @@
+-- SQLite
+
+-- Consultar todos itens adquiridos em uma venda.
+SELECT ITEM.SALE_ID  AS 'Código', 
+       P.DESCRIPTION AS 'Cliente',
+       ITEM.QTD      AS 'Funcionário',
+       ITEM.SUBTOTAL AS 'Total Venda' FROM ITEM_SALES AS ITEM
+INNER JOIN PRODUCTS AS P ON (ITEM.PRODUCT_ID = P.ID)
+ORDER BY ITEM.SUBTOTAL;
+
+
+
+SELECT ITEM.SALE_ID  AS 'Código', 
+       P.DESCRIPTION AS 'Cliente',
+       ITEM.QTD      AS 'Funcionário',
+       ITEM.SUBTOTAL AS 'Total Venda' FROM ITEM_SALES AS ITEM
+INNER JOIN PRODUCTS AS P ON (ITEM.PRODUCT_ID = P.ID)
+WHERE ITEM.SALE_ID = 6;
+
+
+
+
+SELECT * FROM ITEM_SALES;
+SELECT * FROM PRODUCTS;
+
+
+
